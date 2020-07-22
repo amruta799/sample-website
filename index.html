@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MI AHORRO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/858a2910ff.js" crossorigin="anonymous"></script>
+     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+  </head>
+  <body>
+    <section id="above">
+      <p>Average monthly return of 2.6% .Learn more</p>
+    </section>
+
+    <section id="title">
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="feature-box col-lg-4">
+
+       <i class="fas fa-drafting-compass fa-3x"></i>
+       <h2>MI AHORRO</h2>
+     </div>
+      <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+          <a href="#performance" class="nav-link">Performance</a>
+      </li>
+      <li class="nav-item">
+          <a href="#third" class="nav-link">EarningCalculator</a>
+      </li>
+      <li class="nav-item">
+          <a href="" class="nav-link">Broker</a>
+      </li>
+      <li class="nav-item">
+          <a href="#fourth" class="nav-link">Join</a>
+      </li>
+      <li class="nav-item">
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+      </li>
+      <li class="nav-item">
+          <a href="" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link b">GET STARTED</button>
+      </li>
+    </ul>
+  </nav>
+  </section>
+
+  <section id="first">
+    <div class="row">
+        <div class="col-lg-6">
+          <h1 class="txt">Where saving meets Investments</h1>
+          <p class="txt p">Join our service and start generating an attractive monthly return</p>
+          <button type="button" class="bt btn-lg"> join now</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/img1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  <section id="second">
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="simage" src="images/img2.jpg" alt="">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="sh">Let us do work,
+      so you can enjoy benefits.</h1>
+
+      <p class="sp">These currencies are commodity-based economies that rely
+      heavily on exports.They usually have strong corelation and move together.</p>
+      <button class="sb btn-lg" type="button" name="button">Learn more.</button>
+    </div>
+  </div>
+  </section>
+
+  <section id="third">
+    <h1 class="th"><span class="ts"> Estimate Your Earnings.</span></h1>
+    <div class="row">
+      <div class="col-lg-6">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+      <p class="slider-h"> Initial Increment</p>
+
+      <div class="slidecontainer">
+       <input type="range" min="100" max="10000" value="1000" class="slider" id="myRange">
+       <p>Value: <span id="demo"></span></p>
+     </div>
+
+     <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+     slider.oninput = function() {
+     output.innerHTML = this.value;
+     }
+    </script>
+    <label class="slider-h">Time period Deposit</label>
+    <input type="text"><br>
+    <label class="slider-h">Withdrawals Deposit</label>
+    <input type="text" name="" value="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <p class="slider-h"> Amount</p>
+
+     <div class="slidecontainer">
+       <input type="range" min="100" max="10000" value="500" class="slider" id="myRange">
+       <p>Value: <span id="demo"></span></p>
+     </div>
+
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+      output.innerHTML = this.value;
+     }
+    </script>
+  <button class=" btn-md tb" type="button" name="button">Calculate</button>
+  </div>
+  <div class="col-lg-6 col">
+    <p class="slider-p">Initial Investment <span class="span-t">   period </span>  <span class="span-t"> Withdrawals/deposit</span></p>
+    <hr>
+    <h3 class="slider-p">10000rs  <span class="span-t">   2 years </span>  <span class="span-t">   Conservative.</span></h3>
+    <h1 class="slider-h eh">Estimated Earnings.</h1>
+    <button class="btn-lg tb" type="button" name="button">5781.88rs</button>
+  </div>
+  </div><br>
+  <br>
+
+  <section id="fourth">
+    <h4 class="four-h">Join the following</h4>
+    <h1 class="four-c">BY 3 Easy steps.</h1>
+  </section>
+  <section id="join">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <i class="fas fa-user fa-7x"></i>
+        <p>Step 1</p>
+        <h3>Open Account</h3>
+        <p>Your account application takes less than 5 minutes.</p>
+      </div>
+      <div class="carousel-item">
+        <i class="fas fa-hand-holding-usd fa-7x"></i>
+        <p>Step 2</p>
+        <h3>Fund</h3>
+        <p>Fund your account using bank credit card or debit card</p>
+      </div>
+      <div class="carousel-item">
+        <i class="fas fa-link fa-7x"></i>
+        <p>Step 3</p>
+        <h3>Connect.</h3>
+        <p>Once your account is approved and funded ,it's time to start earning.</p>
+      </div>
+      <div class="carousel-item">
+        <p>Done</p>
+        <i class="fas fa-check-circle fa-7x"></i>
+        <h3>GET STARTED.</h3>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </section><br><br>
+
+  <section id="performance">
+  <h1 class="perform">Peformance</h1>
+  <p class="perform">Our clients have generated higher returns during economy</p>
+  <div class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script>
+    let myChart=document.getElementById('myChart').getContext('2d');
+
+    let massChart = new Chart(myChart,{
+      type:'pie',
+      data:{
+        labels:['2008','2009','2010','2011','2012','2013','2014'],
+        datasets:[{
+          label:"Percentage return",
+          data:[
+            90,
+            76,
+            78,
+            89,
+            66,
+            46,
+            34
+          ],
+          backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+            'rgba(255, 99, 132, 0.6)'
+          ]
+
+        }]
+      },
+      options:{},
+      legend:{
+        position:'right'
+      },
+      layout:{
+        padding:{
+          right:50
+        }
+      }
+    });
+
+  </script>
+
+  </section>
+  <br><br><br>
+
+  <section id="testimonials">
+    <div class="test">
+
+    <p class="text-center">Investors Experience</p>
+    <h1 class="text-center lh">Testimonials.</h1>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="profile">
+          <img src="images/pass.jpg" class="user">
+          <h3>Nolvia S.</h3>
+
+          <blockquote>"I joined service in early 2020 and was pleasently surprised
+            how well my account did during the corona virus pandamic when most of
+            other investments suffered losses. This account has really been blessing
+            during hard times".</blockquote>
+
+
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="profile">
+          <img src="images/boy.jpg" class="user">
+          <h3>Jhon N.</h3>
+
+          <blockquote>"Been with these guys for over one year
+            and they are good. I had funds managed by them with an ASIC regular
+            broker and happy to hear that they had partnered with a FAC
+            regulated broker out of the UK.Keep up the gain guys".</blockquote>
+
+
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="profile">
+          <img src="images/girl.jpg" class="user">
+          <h3>Maricela C.</h3>
+
+          <blockquote>"I know the team behind AHORRO Digital and can say from direct experience They
+            have been dedicated to developing, trading stratagies for many years and are fully committed
+            to their profession. You can trust them to deliver as they have delivered me over years.</blockquote>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
